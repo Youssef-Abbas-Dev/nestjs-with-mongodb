@@ -1,0 +1,29 @@
+### CREATE NEW MASTER
+POST http://localhost:3000/api/masters
+Content-Type: application/json
+
+{
+    "firstName": "basem",
+    "lastName": "albasrawi",
+    "age": 35,
+    "email": "basem@email.com",
+    "degree": "docroral"
+}
+
+### GET ALL MASTERS
+GET http://localhost:3000/api/masters
+
+### GET ONE MASTER BY ID
+GET http://localhost:3000/api/masters/678a4e9b7190f604cbb797c8
+
+### UPDATE MASTER
+PUT http://localhost:3000/api/masters/678a4e9b7190f604cbb797c8
+Content-Type: application/json
+
+{
+    "firstName": "hasan",
+    "isAcademic": true
+}
+
+### DELETE MASTER
+DELETE http://localhost:3000/api/masters/678a4e9b7190f604cbb797c8
