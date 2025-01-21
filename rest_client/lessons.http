@@ -1,0 +1,14 @@
+### CREATE NEW LESSON
+POST http://localhost:3000/api/lessons
+Content-Type: application/json
+
+{
+    "name": "math",
+    "master": "678a4ee87190f604cbb797ca"
+}
+
+### GET ALL LESSONS
+GET http://localhost:3000/api/lessons
+
+### GET SINGLE LESSON
+GET http://localhost:3000/api/lessons/678fdccf82242cc2acb484e6
